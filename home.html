@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="md:fixed top-0 w-full">
+        <div class="bg-yellow-50">
+            <nav
+                class="flex flex-col gap-5 lg:flex-row w-11/12 md:w-7/12 justify-center md:justify-between items-center m-auto py-8">
+                <div>
+                    <button id="blog-btn" class="btn text-xl md:text-2xl border-none px-8 text-center font-bold rounded-xl bg-lime-400">Blog</button>
+                </div>
+                <div id="donate-logo" class="flex items-center">
+                    <img src="./assets/logo.png" alt="">
+                    <h2 class="ml-4 font-bold text-xl md:text-3xl">Donate Bangladesh</h2>
+                </div>
+                <div class="flex">
+                    <img src="./assets/coin.png" alt="">
+                    <h2 class="font-bold text-xl md:text-2xl ml-3">5500</h2>
+                    <h2 class="font-bold text-xl md:text-2xl ml-1">BDT</h2>
+                </div>
+            </nav>
+        </div>
+        <div class="flex justify-center items-center backdrop-blur-3xl m-auto py-8 gap-5">
+            <button id="donate-btn" class="btn text-2xl  bg-lime-400 rounded-xl font-bold">Donation</button>
+            <button id="history-btn" class="btn text-2xl  rounded-xl font-bold">History</button>
+        </div>
+    </div>
+    <section class="bg-gray-100">
+        <div class="w-11/12 lg:max-w-7xl m-auto py-16">
+            <div class="btn bg-gray-200 flex gap-2 max-w-72 h-full items-center justify-center rounded-full m-auto">
+                <i class="fa-solid fa-arrow-right"></i>
+                <h3 class="font-bold text-lg">FAQ</h3>
+            </div>
+            <h1 class="text-2xl md:text-4xl lg:text-5xl text-center font-bold my-5" style="-webkit-text-stroke: 1px;">
+                Your FAQ
+            </h1>
+            <p class="text-center text-lg max-w-4xl my-5 m-auto">A frequently asked questions (FAQ) list is often
+                used in articles, websites, email lists, and online forums where common questions tend to recur, for
+                example through posts or queries by new users related to common knowledge gaps.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <img class="rounded-2xl border" src="./assets/faq.png" alt="">
+                </div>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">What is flood?</div>
+                        <div class="collapse-content">
+                            <p> Rushing water, moving with inertia and a force unparalleled by any machinations of man,
+                                it’s difficult to comprehend the sheer power of a disaster like this. Floods are the
+                                natural disaster that can literally force homes off of their foundations and push them
+                                across the ground. Such events can cause immense harm, destroying anything and
+                                everything in their path. Of all the natural disasters, these ones also exert the
+                                greatest cost in human life. The two worst natural disasters in recorded history were
+                                both floods.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">What does Flood Zone AE mean?</div>
+                        <div class="collapse-content">
+                            <p>The various types of water risk zones are given specific designations to differentiate
+                                them. These designations also determine whether or not homeowners will need to purchase
+                                insurance as a part of their mortgage. According to one resource, “AE flood zones are
+                                areas that present a 26% chance over the life of a 30-year mortgage, according to FEMA.
+                                Since these areas are prone to flooding, homeowners with mortgages from federally
+                                regulated lenders are required to purchase flood insurance through the NFIP.”</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">What is happening at the quota-reform protests
+                            in Bangladesh?</div>
+                        <div class="collapse-content">
+                            <p>On 15 July 2024, students of Dhaka University were sitting with placards and flags in a
+                                peaceful protest calling for reforms on the quota allocation for government jobs in
+                                Bangladesh. Suddenly, they were attacked by individuals armed with rods, sticks and
+                                clubs with a few even brandishing revolvers. Within hours, a pattern emerged across the
+                                country with similar attacks coordinated by people believed to be members of the
+                                Bangladesh Chatra League (BCL), a group affiliated with the ruling Awami League (AL),
+                                against student protesters.
+                                <br>
+
+                                By the afternoon of 16 July, police fired tear gas and charged with batons drawn at
+                                protesters in front of Begum Rokeya University in the north-western city of Rangpur
+                                where students had gathered, led by the protest coordinator Abu Sayed among others.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/index.js"></script>
+    <script src="./js/utility.js"></script>
+</body>
+
+</html>

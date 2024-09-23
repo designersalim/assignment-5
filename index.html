@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Donate Bangladesh</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,25 +16,37 @@
             <nav
                 class="flex flex-col gap-5 lg:flex-row w-11/12 md:w-7/12 justify-center md:justify-between items-center m-auto py-8">
                 <div>
-                    <button
-                        class="btn text-xl md:text-2xl border-none px-8 text-center font-bold rounded-xl bg-lime-400">Blog</button>
+                    <button id="blog-btn" class="btn text-xl md:text-2xl border-none px-8 text-center font-bold rounded-xl bg-lime-400">Blog</button>
                 </div>
-                <div class="flex items-center">
+                <div id="donate-logo" class="flex items-center">
                     <img src="./assets/logo.png" alt="">
                     <h2 class="ml-4 font-bold text-xl md:text-3xl">Donate Bangladesh</h2>
                 </div>
                 <div class="flex">
                     <img src="./assets/coin.png" alt="">
-                    <h2 class="font-bold text-xl md:text-2xl ml-3">5500</h2>
+                    <h2 id="current-balance" class="font-bold text-xl md:text-2xl ml-3">5500</h2>
                     <h2 class="font-bold text-xl md:text-2xl ml-1">BDT</h2>
                 </div>
             </nav>
         </div>
         <div class="flex justify-center items-center backdrop-blur-3xl m-auto py-8 gap-5">
-            <button class="btn text-2xl  bg-gray-200 rounded-xl font-bold">Donation</button>
-            <button class="btn text-2xl  bg-gray-200 rounded-xl font-bold">History</button>
+            <button id="donate-btn" class="btn text-2xl  bg-lime-400 rounded-xl font-bold">Donation</button>
+            <button id="history-btn" class="btn text-2xl  rounded-xl font-bold">History</button>
         </div>
     </div>
+    <section id="congrats-btn" class="hidden absolute left-1/2 mt-96">
+        <div class=" fixed rounded-xl bg-yellow-50 px-16 py-8 justify-center items-center m-auto shadow-sm">
+            <h2 class="text-center text-4xl font-bold" >Congrats!</h2>
+            <div class="flex justify-center my-4">
+                <img src="./assets/coin.png" alt="">
+            </div>
+            <p class="text-center text-xl my-3">You Have Donated for Humankind</p>
+            <h3 class="text-center text-2xl font-bold mb-6">Sucessfully</h3>
+            <div class="flex justify-center">
+                <button id="close-btn" class="btn bg-yellow-400 text-white font-bold text-2xl">close confirmation</button>
+            </div>
+        </div>
+    </section>
     <section class="grid grid-cols-1 gap-8 py-8 md:pt-96 lg:pt-64 md:py-20">
         <div class="justify-center w-11/12 md:w-7/12 items-center m-auto p-4 md:p-8 border-gray-200 border-solid border-2 rounded-2xl">
             <div class="grid grid-cols-1 lg:grid-cols-5 gap-5 md:gap-10">
@@ -43,7 +55,7 @@
                 <div class="md:col-span-3">
                     <button class="flex bg-gray-200 px-6 py-5 rounded-xl">
                         <img src="./assets/coin.png" alt="">
-                        <h2 class="font-bold text-lg md:text-xl ml-3">00</h2>
+                        <h2 id="noakhali-balance" class="font-bold text-lg md:text-xl ml-3">00</h2>
                         <h2 class="font-bold text-lg md:text-xl ml-1">BDT</h2>
                     </button>
                     <h2 class="font-bold text-xl md:text-3xl pt-4">Donate for Flood at Noakhali, Bangladesh</h2>
@@ -52,12 +64,10 @@
                         homes infrastructure. Your donation will help provide essential supplies and to those affected
                         by this disaster. Every contribution, big or small, makes difference. Please join us in
                         supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                    <input class="px-3 py-4 border-2 border-gray-200 rounded-lg w-full my-4"
+                    <input id="noakhali-input" class="px-3 py-4 border-2 border-gray-200 rounded-lg w-full my-4"
                         placeholder="Write Donation Amount" type="text">
                     <br>
-                    <button
-                        class="btn flex w-full justify-center items-center bg-lime-400 font-bold text-2xl rounded-xl">Donate
-                        Now</button>
+                    <button id="noakhali-btn" class="btn flex w-full justify-center items-center bg-lime-400 font-bold text-2xl rounded-xl">Donate Now <button>
                 </div>
             </div>
         </div>
@@ -118,8 +128,8 @@
     <footer>
         <div class="bg-yellow-50 h-24"></div>
     </footer>
-    <script src=""></script>
-    <script src=""></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/utility.js"></script>
 </body>
 
 </html>
