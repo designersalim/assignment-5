@@ -1,22 +1,22 @@
-document.getElementById('blog-btn').addEventListener('click', function(){
+document.getElementById('blog-btn').addEventListener('click', function () {
     window.location.href = './home.html';
 })
 
-document.getElementById('donate-logo').addEventListener('click', function(){
+document.getElementById('donate-logo').addEventListener('click', function () {
     window.location.href = './index.html';
 })
 
 
-document.getElementById('donate-btn').addEventListener('click', function(){
+document.getElementById('donate-btn').addEventListener('click', function () {
     document.getElementById('donate-btn').classList.remove('bg-lime-400');
     document.getElementById('history-btn').classList.remove('bg-lime-400');
     document.getElementById('donate-btn').classList.add('bg-lime-400')
     document.getElementById('donate-section').classList.add('hidden')
     document.getElementById('transaction-section').classList.add('hidden')
-    document.getElementById('donate-section').classList.remove('hidden');    
+    document.getElementById('donate-section').classList.remove('hidden');
 })
 
-document.getElementById('history-btn').addEventListener('click', function(){
+document.getElementById('history-btn').addEventListener('click', function () {
     document.getElementById('donate-btn').classList.remove('bg-lime-400');
     document.getElementById('history-btn').classList.remove('bg-lime-400');
     document.getElementById('history-btn').classList.add('bg-lime-400')
@@ -26,10 +26,10 @@ document.getElementById('history-btn').addEventListener('click', function(){
 })
 
 
-document.getElementById('noakhali-btn').addEventListener('click', function(){
+document.getElementById('noakhali-btn').addEventListener('click', function () {
     const noakhaliValue = getInputElementById('noakhali-input')
     const balance = getTextElementById('current-balance')
-    if(noakhaliValue >= 0 && noakhaliValue <= balance){
+    if (noakhaliValue >= 0 && noakhaliValue <= balance) {
         const noakhaliBalance = getTextElementById('noakhali-balance');
         const numText = parseFloat(noakhaliBalance);
         const newBalance = noakhaliValue + numText;
@@ -50,19 +50,19 @@ document.getElementById('noakhali-btn').addEventListener('click', function(){
         const historyContainer = document.getElementById('transaction-container');
         historyContainer.insertBefore(historyItem, historyContainer.firstChild);
     }
-    else{
+    else {
         alert("Please enter correct amount.")
     }
 })
 
-document.getElementById('close-btn').addEventListener('click', function(){
+document.getElementById('close-btn').addEventListener('click', function () {
     document.getElementById('congrats-btn').classList.add('hidden')
 })
 
-document.getElementById('feni-btn').addEventListener('click', function(){
+document.getElementById('feni-btn').addEventListener('click', function () {
     const feniValue = getInputElementById('feni-input')
     const balance2 = getTextElementById('current-balance')
-    if(feniValue >= 0 && feniValue <= balance2){
+    if (feniValue >= 0 && feniValue <= balance2) {
         const feniBalance = getTextElementById('feni-balance');
         const numText2 = parseFloat(feniBalance);
         const newBalance2 = feniValue + numText2;
@@ -82,23 +82,23 @@ document.getElementById('feni-btn').addEventListener('click', function(){
         `;
         const historyContainer = document.getElementById('transaction-container');
         historyContainer.insertBefore(historyItem, historyContainer.firstChild);
-        
+
     }
-    else{
+    else {
         alert("Please enter correct amount.")
     }
 })
 
 
-document.getElementById('quota-btn').addEventListener('click', function(){
+document.getElementById('quota-btn').addEventListener('click', function () {
     const quotaValue = getInputElementById('quota-input')
     const balance3 = getTextElementById('current-balance')
-    if(quotaValue >= 0 && quotaValue <= balance3){
+    if (quotaValue >= 0 && quotaValue <= balance3) {
         const quotaBalance = getTextElementById('quota-balance');
         const numText3 = parseFloat(quotaBalance);
         const newBalance3 = quotaValue + numText3;
         document.getElementById('quota-balance').innerText = newBalance3;
-        const newCurrentBalance = balance3-quotaValue;
+        const newCurrentBalance = balance3 - quotaValue;
         document.getElementById('current-balance').innerText = newCurrentBalance;
         document.getElementById('congrats-btn').classList.remove('hidden');
         const historyItem = document.createElement('div')
@@ -113,9 +113,9 @@ document.getElementById('quota-btn').addEventListener('click', function(){
         `;
         const historyContainer = document.getElementById('transaction-container');
         historyContainer.insertBefore(historyItem, historyContainer.firstChild);
-        
+
     }
-    else{
+    else {
         alert("Please enter correct amount.")
     }
 })
