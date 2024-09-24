@@ -30,8 +30,8 @@
             </nav>
         </div>
         <div class="flex justify-center items-center backdrop-blur-3xl m-auto py-8 gap-5">
-            <button id="donate-btn" class="btn text-2xl  bg-lime-400 rounded-xl font-bold">Donation</button>
-            <button id="history-btn" class="btn text-2xl  rounded-xl font-bold">History</button>
+            <button id="donate-btn" class="text-2xl px-8 py-5 bg-lime-400 rounded-xl font-bold">Donation</button>
+            <button id="history-btn" class="text-2xl px-8 py-5  rounded-xl font-bold">History</button>
         </div>
     </div>
     <section id="congrats-btn" class="hidden absolute left-1/2 mt-96">
@@ -43,11 +43,11 @@
             <p class="text-center text-xl my-3">You Have Donated for Humankind</p>
             <h3 class="text-center text-2xl font-bold mb-6">Sucessfully</h3>
             <div class="flex justify-center">
-                <button id="close-btn" class="btn bg-yellow-400 text-white font-bold text-2xl">close confirmation</button>
+                <button id="close-btn" class="btn bg-yellow-400 text-white font-bold text-2xl">close</button>
             </div>
         </div>
     </section>
-    <section class="grid grid-cols-1 gap-8 py-8 md:pt-96 lg:pt-64 md:py-20">
+    <section id="donate-section" class="grid grid-cols-1 gap-8 py-8 md:pt-96 lg:pt-64 md:py-20">
         <div class="justify-center w-11/12 md:w-8/12 items-center m-auto p-4 md:p-8 border-gray-200 border-solid border-2 rounded-2xl">
             <div class="grid grid-cols-1 lg:grid-cols-5 gap-5 md:gap-10">
                 <img class="w-full md:col-span-2 h-fit" src="./assets/noakhali.png" alt="">
@@ -123,6 +123,10 @@
             </div>
         </div>
     </section>
+    <div id="transaction-section" class="w-8/12 m-auto">
+        <h1 class="text-2xl text-center font-bold py-4">Transaction History</h1>
+        <div id="transaction-container"></div>
+    </div>
     <footer>
         <div class="bg-yellow-50 h-24"></div>
     </footer>
